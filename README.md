@@ -1,4 +1,6 @@
 postachio-node-sdk
 ==================
 
-An NPM modules for developing themes locally - provides a mini Node server, dummy content, and theme parsing for testing purposes.
+INCOMPLETE
+
+This is a work in progress. Barely in progress, but more to come soon.
