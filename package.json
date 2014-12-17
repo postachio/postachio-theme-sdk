@@ -32,5 +32,8 @@
     "gulp-nodemon": "~1.0.4",
     "express": "~4.10.6",
     "consolidate": "~0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

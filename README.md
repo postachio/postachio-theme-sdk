@@ -1,10 +1,30 @@
 postachio-theme-sdk
-==================
+===================
 
-INCOMPLETE
+## Incomplete Warning
 
-This is a work in progress. Barely in progress, but more to come soon.
+This is a highly experimental, incomplete SDK. It's work in progress. Use at your own risk and feel free to submit pull requests and bug reports.
 
 ## What's this for?
 
-Since launching GitHub powered themes, we've been developing themes locally. There's a need to be able to run a theme locally while developing, so this module will allow that.
+This module launches a development environment for working on Postach.io themes locally. In future it will be a dependency of our official themes.
+
+### 1) Install SDK
+
+Run the following command in Terminal to install the SDK through npm. 
+```
+npm install postachio-theme-sdk --save
+```
+
+### 2) Run Gulp
+
+Run gulp to start the server.
+```
+gulp postachio
+```
+Your development environment will be available at `localhost:8000`. It will listen for changes to LESS, CSS, HTML, and JS file extensions and restart the server.
+
+## Need More Info? 
+
+Check out our [help documentation](http://help.postach.io/tag/theme-code) for more information on theming Postach.io sites.
+
