@@ -1,0 +1,36 @@
+{
+  "name": "postachio-theme-sdk",
+  "version": "0.0.1",
+  "description": "A tool for developing Postach.io themes locally.",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/postachio/postachio-theme-sdk"
+  },
+  "keywords": [
+    "postachio",
+    "postachio theme",
+    "theme",
+    "blog"
+  ],
+  "author": "Shawn Adrian <shawn@nerdburn.com> (http://nerdburn.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/postachio/postachio-theme-sdk/issues"
+  },
+  "homepage": "http://postach.io",
+  "devDependencies": {
+    "gulp": "~3.8.7",
+    "gulp-concat": "~2.3.4",
+    "gulp-less": "~1.3.3",
+    "path": "~0.4.9",
+    "gulp-rename": "~1.2.0",
+    "gulp-uglify": "~0.3.1"
+  },
+  "dependencies": {
+    "swig": "~1.4.2",
+    "gulp-nodemon": "~1.0.4",
+    "express": "~4.10.6",
+    "consolidate": "~0.10.0"
+  }
+}
