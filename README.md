@@ -16,9 +16,9 @@ Run the following command in Terminal to install the SDK through npm.
 npm install postachio-theme-sdk --save
 ```
 
-### 2) Run Gulp
+### 2) Run Gulp Task
 
-Run gulp to start the server.
+Run the `postachio` gulp task to start the server.
 ```
 gulp postachio
 ```

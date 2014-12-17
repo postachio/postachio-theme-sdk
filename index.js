@@ -8,10 +8,10 @@ var path      = require('path');
 var bootstrap = require('./routes');
 
 // set swig as templating engine
-app.use('/assets', express.static(__dirname + '/../assets'));
+app.use('/assets', express.static(__dirname + '/../../assets'));
 app.engine('html', cons.swig);
 app.set('view engine', 'html');
-app.set('views', __dirname + '/../');
+app.set('views', __dirname + '/../../');
 
 // make routes, add content, etc.
 bootstrap(app);
