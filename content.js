@@ -12,6 +12,14 @@ swig.setFilter('format_tag', function(input, id) {
   return 'tag';
 });
 
+swig.setFilter('truncate', function(input, len, bool, end) { // added bool to match jinja, not used
+  end = (typeof end === 'undefined') ? '...' : end;
+  if(typeof input === 'string') {
+    return input.substring(0, len) + ((input.length > len) ? end : '');
+  }
+  return input;
+});
+
 module.exports = function(type) {
   
   var global = {

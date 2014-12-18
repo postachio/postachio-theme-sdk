@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.1.12
+3 info using node@v0.10.22
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/nerdburn/Sites/postachio-theme-sdk',
+7 silly cache add   type: 'directory' }
+8 verbose tar pack [ '/Users/nerdburn/.npm/postachio-theme-sdk/0.0.1/package.tgz',
+8 verbose tar pack   '/Users/nerdburn/Sites/postachio-theme-sdk' ]
+9 verbose tarball /Users/nerdburn/.npm/postachio-theme-sdk/0.0.1/package.tgz
+10 verbose folder /Users/nerdburn/Sites/postachio-theme-sdk
+11 info prepublish postachio-theme-sdk@0.0.1
+12 verbose addLocalTarball adding from inside cache /Users/nerdburn/.npm/postachio-theme-sdk/0.0.1/package.tgz
+13 silly cache afterAdd postachio-theme-sdk@0.0.1
+14 verbose afterAdd /Users/nerdburn/.npm/postachio-theme-sdk/0.0.1/package/package.json not in flight; writing
+15 verbose afterAdd /Users/nerdburn/.npm/postachio-theme-sdk/0.0.1/package/package.json written
+16 silly publish { name: 'postachio-theme-sdk',
+16 silly publish   version: '0.0.1',
+16 silly publish   description: 'A tool for developing Postach.io themes locally.',
+16 silly publish   main: 'index',
+16 silly publish   repository:
+16 silly publish    { type: 'git',
+16 silly publish      url: 'git://github.com/postachio/postachio-theme-sdk' },
+16 silly publish   keywords: [ 'postachio', 'postachio theme', 'theme', 'blog' ],
+16 silly publish   author:
+16 silly publish    { name: 'Shawn Adrian',
+16 silly publish      email: 'shawn@nerdburn.com',
+16 silly publish      url: 'http://nerdburn.com/' },
+16 silly publish   license: 'MIT',
+16 silly publish   bugs: { url: 'https://github.com/postachio/postachio-theme-sdk/issues' },
+16 silly publish   homepage: 'http://postach.io',
+16 silly publish   devDependencies:
+16 silly publish    { gulp: '~3.8.7',
+16 silly publish      'gulp-concat': '~2.3.4',
+16 silly publish      'gulp-less': '~1.3.3',
+16 silly publish      path: '~0.4.9',
+16 silly publish      'gulp-rename': '~1.2.0',
+16 silly publish      'gulp-uglify': '~0.3.1' },
+16 silly publish   dependencies:
+16 silly publish    { swig: '~1.4.2',
+16 silly publish      'gulp-nodemon': '~1.0.4',
+16 silly publish      express: '~4.10.6',
+16 silly publish      consolidate: '~0.10.0' },
+16 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+16 silly publish   readme: 'postachio-theme-sdk\n===================\n\n## Incomplete Warning\n\nThis is a highly experimental, incomplete SDK. It\'s work in progress. Use at your own risk and feel free to submit pull requests and bug reports.\n\n## What\'s this for?\n\nThis module launches a development environment for working on Postach.io themes locally. In future it will be a dependency of our official themes.\n\n### 1) Install SDK\n\nRun the following command in Terminal to install the SDK through npm. \n```\nnpm install postachio-theme-sdk --save\n```\n\n### 2) Run Gulp Task\n\nRun the `postachio` gulp task to start the server.\n```\ngulp postachio\n```\nYour development environment will be available at `localhost:8000`. It will listen for changes to LESS, CSS, HTML, and JS file extensions and restart the server.\n\n## Need More Info? \n\nCheck out our [help documentation](http://help.postach.io/tag/theme-code) for more information on theming Postach.io sites.\n\n',
+16 silly publish   readmeFilename: 'README.md',
+16 silly publish   gitHead: '7f86109974a2649d47a530967ac51dface9fc180',
+16 silly publish   _id: 'postachio-theme-sdk@0.0.1',
+16 silly publish   _shasum: '7731ce22f5091c392aa0d84ae68d92b674fbed0f',
+16 silly publish   _from: '.' }
+17 silly mapToRegistry name postachio-theme-sdk
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/postachio-theme-sdk
+21 verbose publish registryBase https://registry.npmjs.org/
+22 silly publish uploading /Users/nerdburn/.npm/postachio-theme-sdk/0.0.1/package.tgz
+23 verbose request uri https://registry.npmjs.org/postachio-theme-sdk
+24 verbose request sending authorization for write operation
+25 info attempt registry request try #1 at 15:52:45
+26 verbose request id 7d643624d840e088
+27 http request PUT https://registry.npmjs.org/postachio-theme-sdk
+28 http 403 https://registry.npmjs.org/postachio-theme-sdk
+29 verbose headers { date: 'Wed, 17 Dec 2014 23:52:45 GMT',
+29 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=60',
+29 verbose headers   'content-length': '4112',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   'x-served-by': 'cache-lax1432-LAX',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1418860365.276232,VS0,VE49',
+29 verbose headers   'keep-alive': 'timeout=10, max=50',
+29 verbose headers   connection: 'Keep-Alive' }
+30 verbose request invalidating /Users/nerdburn/.npm/registry.npmjs.org/postachio-theme-sdk on PUT
+31 error publish Failed PUT 403
+32 verbose stack Error: forbidden cannot modify pre-existing version: 0.0.1
+32 verbose stack old={"name":"postachio-theme-sdk","version":"0.0.1","description":"A tool for developing Postach.io themes locally.","main":"index","repository":{"type":"git","url":"git://github.com/postachio/postachio-theme-sdk"},"keywords":["postachio","postachio theme","theme","blog"],"author":{"name":"Shawn Adrian","email":"shawn@nerdburn.com","url":"http://nerdburn.com/"},"license":"MIT","bugs":{"url":"https://github.com/postachio/postachio-theme-sdk/issues"},"homepage":"http://postach.io","devDependencies":{"gulp":"~3.8.7","gulp-concat":"~2.3.4","gulp-less":"~1.3.3","path":"~0.4.9","gulp-rename":"~1.2.0","gulp-uglify":"~0.3.1"},"dependencies":{"swig":"~1.4.2","gulp-nodemon":"~1.0.4","express":"~4.10.6","consolidate":"~0.10.0"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"gitHead":"44cbef27e50ae1826ef0d18eed980cfa25409384","_id":"postachio-theme-sdk@0.0.1","_shasum":"bb023b2a017c6d40aa421eb4de8e8a3290ee320e","_from":".","_npmVersion":"2.1.12","_nodeVersion":"0.10.22","_npmUser":{"name":"nerdburn","email":"shawn@nerdburn.com"},"maintainers":[{"name":"nerdburn","email":"shawn@nerdburn.com"}],"dist":{"shasum":"bb023b2a017c6d40aa421eb4de8e8a3290ee320e","tarball":"http://registry.npmjs.org/postachio-theme-sdk/-/postachio-theme-sdk-0.0.1.tgz"}}
+32 verbose stack new={"name":"postachio-theme-sdk","version":"0.0.1","description":"A tool for developing Postach.io themes locally.","main":"index","repository":{"type":"git","url":"git://github.com/postachio/postachio-theme-sdk"},"keywords":["postachio","postachio theme","theme","blog"],"author":{"name":"Shawn Adrian","email":"shawn@nerdburn.com","url":"http://nerdburn.com/"},"license":"MIT","bugs":{"url":"https://github.com/postachio/postachio-theme-sdk/issues"},"homepage":"http://postach.io","devDependencies":{"gulp":"~3.8.7","gulp-concat":"~2.3.4","gulp-less":"~1.3.3","path":"~0.4.9","gulp-rename":"~1.2.0","gulp-uglify":"~0.3.1"},"dependencies":{"swig":"~1.4.2","gulp-nodemon":"~1.0.4","express":"~4.10.6","consolidate":"~0.10.0"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"readme":"postachio-theme-sdk\u000a===================\u000a\u000a## Incomplete Warning\u000a\u000aThis is a highly experimental, incomplete SDK. It's work in progress. Use at your own risk and feel free to submit pull requests and bug reports.\u000a\u000a## What's this for?\u000a\u000aThis module launches a development environment for working on Postach.io themes locally. In future it will be a dependency of our official themes.\u000a\u000a### 1) Install SDK\u000a\u000aRun the following command in Terminal to install the SDK through npm. \u000a```\u000anpm install postachio-theme-sdk --save\u000a```\u000a\u000a### 2) Run Gulp Task\u000a\u000aRun the `postachio` gulp task to start the server.\u000a```\u000agulp postachio\u000a```\u000aYour development environment will be available at `localhost:8000`. It will listen for changes to LESS, CSS, HTML, and JS file extensions and restart the server.\u000a\u000a## Need More Info? \u000a\u000aCheck out our [help documentation](http://help.postach.io/tag/theme-code) for more information on theming Postach.io sites.\u000a\u000a","readmeFilename":"README.md","gitHead":"7f86109974a2649d47a530967ac51dface9fc180","_id":"postachio-theme-sdk@0.0.1","_shasum":"7731ce22f5091c392aa0d84ae68d92b674fbed0f","_from":".","_npmVersion":"2.1.12","_nodeVersion":"0.10.22","_npmUser":{"name":"nerdburn","email":"shawn@nerdburn.com"},"maintainers":[{"name":"nerdburn","email":"shawn@nerdburn.com"}],"dist":{"shasum":"7731ce22f5091c392aa0d84ae68d92b674fbed0f","tarball":"http://registry.npmjs.org/postachio-theme-sdk/-/postachio-theme-sdk-0.0.1.tgz"}}: postachio-theme-sdk
+32 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+32 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+32 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:373:22)
+32 verbose stack     at Request.EventEmitter.emit (events.js:98:17)
+32 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1318:14)
+32 verbose stack     at Request.EventEmitter.emit (events.js:117:20)
+32 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1266:12)
+32 verbose stack     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+32 verbose stack     at _stream_readable.js:920:16
+32 verbose stack     at process._tickCallback (node.js:415:13)
+33 verbose statusCode 403
+34 verbose pkgid postachio-theme-sdk
+35 verbose cwd /Users/nerdburn/Sites/postachio-theme-sdk
+36 error Darwin 14.0.0
+37 error argv "node" "/usr/local/bin/npm" "publish"
+38 error node v0.10.22
+39 error npm  v2.1.12
+40 error code E403
+41 error forbidden cannot modify pre-existing version: 0.0.1
+41 error old={"name":"postachio-theme-sdk","version":"0.0.1","description":"A tool for developing Postach.io themes locally.","main":"index","repository":{"type":"git","url":"git://github.com/postachio/postachio-theme-sdk"},"keywords":["postachio","postachio theme","theme","blog"],"author":{"name":"Shawn Adrian","email":"shawn@nerdburn.com","url":"http://nerdburn.com/"},"license":"MIT","bugs":{"url":"https://github.com/postachio/postachio-theme-sdk/issues"},"homepage":"http://postach.io","devDependencies":{"gulp":"~3.8.7","gulp-concat":"~2.3.4","gulp-less":"~1.3.3","path":"~0.4.9","gulp-rename":"~1.2.0","gulp-uglify":"~0.3.1"},"dependencies":{"swig":"~1.4.2","gulp-nodemon":"~1.0.4","express":"~4.10.6","consolidate":"~0.10.0"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"gitHead":"44cbef27e50ae1826ef0d18eed980cfa25409384","_id":"postachio-theme-sdk@0.0.1","_shasum":"bb023b2a017c6d40aa421eb4de8e8a3290ee320e","_from":".","_npmVersion":"2.1.12","_nodeVersion":"0.10.22","_npmUser":{"name":"nerdburn","email":"shawn@nerdburn.com"},"maintainers":[{"name":"nerdburn","email":"shawn@nerdburn.com"}],"dist":{"shasum":"bb023b2a017c6d40aa421eb4de8e8a3290ee320e","tarball":"http://registry.npmjs.org/postachio-theme-sdk/-/postachio-theme-sdk-0.0.1.tgz"}}
+41 error new={"name":"postachio-theme-sdk","version":"0.0.1","description":"A tool for developing Postach.io themes locally.","main":"index","repository":{"type":"git","url":"git://github.com/postachio/postachio-theme-sdk"},"keywords":["postachio","postachio theme","theme","blog"],"author":{"name":"Shawn Adrian","email":"shawn@nerdburn.com","url":"http://nerdburn.com/"},"license":"MIT","bugs":{"url":"https://github.com/postachio/postachio-theme-sdk/issues"},"homepage":"http://postach.io","devDependencies":{"gulp":"~3.8.7","gulp-concat":"~2.3.4","gulp-less":"~1.3.3","path":"~0.4.9","gulp-rename":"~1.2.0","gulp-uglify":"~0.3.1"},"dependencies":{"swig":"~1.4.2","gulp-nodemon":"~1.0.4","express":"~4.10.6","consolidate":"~0.10.0"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"readme":"postachio-theme-sdk\u000a===================\u000a\u000a## Incomplete Warning\u000a\u000aThis is a highly experimental, incomplete SDK. It's work in progress. Use at your own risk and feel free to submit pull requests and bug reports.\u000a\u000a## What's this for?\u000a\u000aThis module launches a development environment for working on Postach.io themes locally. In future it will be a dependency of our official themes.\u000a\u000a### 1) Install SDK\u000a\u000aRun the following command in Terminal to install the SDK through npm. \u000a```\u000anpm install postachio-theme-sdk --save\u000a```\u000a\u000a### 2) Run Gulp Task\u000a\u000aRun the `postachio` gulp task to start the server.\u000a```\u000agulp postachio\u000a```\u000aYour development environment will be available at `localhost:8000`. It will listen for changes to LESS, CSS, HTML, and JS file extensions and restart the server.\u000a\u000a## Need More Info? \u000a\u000aCheck out our [help documentation](http://help.postach.io/tag/theme-code) for more information on theming Postach.io sites.\u000a\u000a","readmeFilename":"README.md","gitHead":"7f86109974a2649d47a530967ac51dface9fc180","_id":"postachio-theme-sdk@0.0.1","_shasum":"7731ce22f5091c392aa0d84ae68d92b674fbed0f","_from":".","_npmVersion":"2.1.12","_nodeVersion":"0.10.22","_npmUser":{"name":"nerdburn","email":"shawn@nerdburn.com"},"maintainers":[{"name":"nerdburn","email":"shawn@nerdburn.com"}],"dist":{"shasum":"7731ce22f5091c392aa0d84ae68d92b674fbed0f","tarball":"http://registry.npmjs.org/postachio-theme-sdk/-/postachio-theme-sdk-0.0.1.tgz"}}: postachio-theme-sdk
+42 error If you need help, you may report this error at:
+42 error     <http://github.com/npm/npm/issues>
+43 verbose exit [ 1, true ]
