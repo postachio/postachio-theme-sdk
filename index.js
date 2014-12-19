@@ -29,7 +29,7 @@ module.exports = function(options) {
   var server = app.listen(8000, function() {
     var host = server.address().address;
     var port = server.address().port;
-    console.log('Example app listening at http://%s:%s', host, port);
+    console.log('Postach.io theme server running at - http://%s:%s\nUsing directory - %s', host, port, options.root);
   });
   
   return server;
