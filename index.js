@@ -20,7 +20,7 @@ module.exports = function(options) {
   app.use('/assets', express.static(options.root + '/assets'));
   app.engine('html', cons.swig);
   app.set('view engine', 'html');
-  app.set('views', options.root + '/../../');
+  app.set('views', options.root);
 
   // make routes, add content, etc.
   bootstrap(app);
